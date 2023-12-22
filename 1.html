@@ -12,21 +12,22 @@
   </style>
  
 </head>
-<body 
-  style="background-image: url(https://i.postimg.cc/HsL8nx6Z/thankyou.png);"
-  style="background-repeat: no-repeat;" >
+<body>
+    <div class="container">
+        
+    </div>
 
     <script>
         function askName() {
           var name = prompt("Masukkan nama Anda:"); // tampilkan pop up form untuk memasukkan nama
           if (name) {
             document.getElementById("letter").innerHTML = "<h1>Halo, " + name + 
-                "</h1><p>Terima kasih telah telah berbelanja di toko kami, kam mengajak anda untuk bergambung menjadi member kamu dengan mengubungi bla bla bla</p>"; // tampilkan surat dengan nama
+                "</h1><p>Terima kasih telah telah berbelanja di toko kami, kami mengajak anda untuk bergambung menjadi member dengan mengubungi bla bla bla</p>"; // tampilkan surat dengan nama
             document.getElementById("mas").style.display = "none";  
         }
         }
       </script>
-    <button id="mas" onclick="askName()">Masukan nama</button> <!-- beri id pada tombol -->
+    <button id="mas" onclick="askName()">Masukan nama anda</button> <!-- beri id pada tombol -->
   <div id="letter"></div> <!-- tempat untuk menampilkan surat -->
 </body>
 </html>
