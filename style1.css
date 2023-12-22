@@ -4,9 +4,8 @@
  background-image: url('https://i.postimg.cc/HsL8nx6Z/thankyou.png'); 
  background-position: center;
  background-size: cover;
+ background-repeat: no-repeat;
  background-attachment: fixed;
- 
- 
   }
   
   h1 {
