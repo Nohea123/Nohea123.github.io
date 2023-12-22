@@ -1,5 +1,5 @@
 .container{
- height: 1700px;      
+ height: 2200px;      
  Width: 1080px;
  background-image: url('https://i.postimg.cc/HsL8nx6Z/thankyou.png'); 
  background-position: center;
@@ -31,7 +31,7 @@
   
   button {
       margin: 0;
-   font-size: 100px;
+   font-size: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
