@@ -1,10 +1,14 @@
 @font-face{
   font-family:"Nohea";
-  src: url(fonts/Nohea.ttf) format('truetype');
+  src: url(fonts/Nohea.otf) format('truetype');
 }
 @font-face{
   font-family:"Kagura";
   src: url(fonts/Kagura.ttf) format('truetype');
+}
+@font-face{
+  font-family:"Molina";
+  src: url(fonts/Molina.otf) format('truetype');
 }
 
 
@@ -19,29 +23,34 @@
    }
    
    h1 {
-    font-family: "Nohea", sans-serif;
+   font-family: "Nohea", sans-serif;
+   font-weight: 500;
    margin: 0;
-    font-size: 150px;
-   position: absolute;
+   font-size: 140px;
+   position: fixed;
    top: 30%;
-   left: 30%;
+   left: 35%; 
    -ms-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
    }
    
    p {
-    line-height: 0.9;
-    font-family: "Kagura",sans-serif;
+   line-height: 0.8;
+   font-family: "Kagura",sans-serif;
    margin: 0;
-   font-size: 130px; 
-   position: absolute;
-   top: 35%;
-   left: 50%;
-   right: -20%;
+   font-size: 110px; 
+   position: fixed;
+   top: 48%;
+   left: 59%;
+   right: -40%;
    -ms-transform: translate(-50%, 0%);
    transform: translate(-50%, -50%);
    } 
    
+   button {
+    font-family: "Molina", sans-serif;
+    color: rgb(0, 110, 255);
+   }
    button {
        margin: 0;
     font-size: 65px;
