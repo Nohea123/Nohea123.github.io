@@ -10,16 +10,17 @@
   font-family:"Molina";
   src: url(fonts/Molina.otf) format('truetype');
 }
-
-
 .container{
+
   height: 100%;      
   Width: 100%;
   background-image: url('https://i.postimg.cc/HsL8nx6Z/thankyou.png'); 
-  background-position: center;
-  background-size: 100% 100%;
+  background-position: relative;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: cover;
+  margin-left: auto;
+  margin-right: auto;
    }
    
    .modal {
@@ -52,7 +53,7 @@
    button1 {
     font-family: "Molina", sans-serif;
     color: rgb(0, 0, 0);
-    margin: 0;
+
     font-size: 65px;
     position: fixed;
     left: 50%;
@@ -63,7 +64,7 @@
  button {
     font-family: "Molina", sans-serif;
     color: rgb(0, 0, 0);
-    margin: 0;
+
     font-size: 65px;
     position: fixed;
     left: 50%;
@@ -74,7 +75,7 @@
    h1 {
     font-family: "Nohea", sans-serif;
     font-weight: 400;
-    margin: 0;
+
     font-size: 140px;
     position: fixed;
     top: 30%;
@@ -85,7 +86,7 @@
    p {
    line-height: 0.8;
    font-family: "Kagura",sans-serif;
-   margin: 0;
+
    font-size: 80px; 
    position: fixed;
    top: 45%;
@@ -97,7 +98,7 @@
    form{
     font-family: "Molina", sans-serif;
     color: rgb(0, 0, 0);
-    margin: 0;
+
     font-size: 25px;
     position: absolute;
     left: 50%;
