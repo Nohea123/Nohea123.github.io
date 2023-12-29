@@ -1,11 +1,8 @@
-<!-- Membuat halaman web dengan judul "Contoh Form Bootstrap" -->
 <html>
 <head>
-  <!-- Menambahkan bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Menghapus style inline dan mengganti dengan file test.css -->
   <style>
     @import "style1.css";
    h1 {
@@ -17,14 +14,10 @@
  </style>
 </head>
 <body>
-    <div class="container">
-        
+    <div class="container">     
     </div>
-    <!-- Membuat tombol bootstrap dengan data-toggle="modal" dan data-target="#modalNama" -->
     <button1 class="btn btn-primary" type="button" data-toggle="modal" data-target="#modalNama">Masukkan nama Anda
     </button1>
-
-    <!-- Membuat modal yang berisi formulir untuk memasukkan nama -->
     <div class="modal fade" id="modalNama" tabindex="-10" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -33,11 +26,9 @@
           </div>
           <div class="modal-body">
             <form>
-              <!-- Membuat input teks dengan label "Nama" -->
               <div class="form-group">
                 <input type="text" class="form-control" id="nama" placeholder="Nama">
               </div>
-                 <!-- Membuat tombol submit dengan label "Kirim" -->
               <button type="submit" class="btn btn-success">Kirim</button>
             </form>
           </div>
@@ -46,16 +37,15 @@
     </div>
   </div>
   <script>
-    // Membuat fungsi untuk menampilkan surat dengan nama
     function showLetter() {
-      var name = document.getElementById("nama").value; // mengambil nilai dari input teks
+      var name = document.getElementById("nama").value;
       if (name) {
         document.getElementById("letter").innerHTML = "<h1>Halo, " + name + 
             "</h1><p>Terima kasih telah berbelanja di toko kami, kami mengajak anda untuk bergabung menjadi member dengan mengubungi bla bla bla</p>"; // menampilkan surat dengan nama
-        $("#modalNama").modal("hide"); // menyembunyikan modal
-      } // tambahakan <br/> untuk enter pada <p>
+        $("#modalNama").modal("hide");
+      }
     }
-    // Menambahkan event listener untuk tombol submit
+
     document.querySelector("form").addEventListener("submit", function(event) {
       event.preventDefault(); // mencegah halaman reload
       showLetter(); // memanggil fungsi showLetter
